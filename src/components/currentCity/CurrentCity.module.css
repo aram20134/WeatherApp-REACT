@@ -1,0 +1,12 @@
+.CurrentCity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.CurrentCityPNG {
+    width: 40px;
+    height: 40px;
+}
+.CurrentCity p {
+    font-weight:500;
+}

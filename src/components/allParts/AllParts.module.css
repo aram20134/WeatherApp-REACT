@@ -1,0 +1,4 @@
+.AllParts {
+    display: flex;
+    flex-direction: row;
+}

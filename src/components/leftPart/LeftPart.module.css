@@ -1,0 +1,10 @@
+.leftPart {
+    background-color: #F3FBFF;
+    padding: 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.leftPart i {
+    font-weight: 400;
+    font-style: normal;
+}

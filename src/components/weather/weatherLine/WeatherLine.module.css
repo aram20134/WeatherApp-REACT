@@ -1,0 +1,26 @@
+.ico {
+    width: 40px;
+}
+.WeatherLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+.part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.WeatherLine > p {
+    color: rgb(98, 98, 98);
+    font-weight: 500;
+    width: 80px;
+    font-size: 14px;
+}
+.part p {
+    color: rgb(98, 98, 98);
+    font-weight: 500;
+    font-size: 14px;
+}
