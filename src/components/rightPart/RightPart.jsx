@@ -10,6 +10,8 @@ export default function RightPart({ city, weatherLoaded, weather }) {
   var month = new Intl.DateTimeFormat('ru-RU', {month: 'long'}).format(new Date())
   month = month.charAt(0).toUpperCase() + month.slice(1)
 
+  console.log()
+
   return weatherLoaded ? (
     <div className={cls.RightPart}>
       <div style={{display: 'flex',flexDirection: 'column', alignItems: 'center'}}>
@@ -21,7 +23,7 @@ export default function RightPart({ city, weatherLoaded, weather }) {
         <div className={cls.MainInfo}>
           <div className={cls.MainInfo2}>
             <p style={{ fontSize: "40px" }}>Сегодня</p>
-            <p className={cls.date}>{weekday}{', '}{month}</p>
+            <p className={cls.date}>{weekday}{', '}{new Date().getDate()}{' '}{month}</p>
           </div>
         </div>
         <div className={cls.MainInfo3}>
