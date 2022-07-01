@@ -6,7 +6,7 @@ export default function selectSearch(props) {
     <div onClick={function () {
       props.setSearch('');
       props.setWeatherLoaded(false);
-      return props.setCity([{ city: props.city.city, eng: props.city.eng }])
+      return props.setCity([{city: props.city.city, eng: props.city.eng, country: props.city.country }])
     }} className={cls.selectSearch}>{props.city.city}</div>
   )
 }

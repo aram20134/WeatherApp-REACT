@@ -7,9 +7,8 @@ import { cities } from "../../other/cities";
 import { WeatherInfo } from './../../context/index';
 import Weather from "../weather/Weather";
 
-export default function LeftPart() {
-  const {city, setCity, setWeatherLoaded, weatherLoaded} = useContext(WeatherInfo)
-  
+export default function LeftPart({city, setCity, weatherLoaded, setWeatherLoaded}) {
+  // const {city, setCity, setWeatherLoaded, weatherLoaded} = useContext(WeatherInfo)
   function isWeatherError (weatherLoaded, city) {
     if (weatherLoaded === null) {
       return 'Ошибка...'

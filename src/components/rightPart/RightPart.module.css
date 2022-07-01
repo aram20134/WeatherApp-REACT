@@ -1,6 +1,6 @@
 .RightPart {
     background-color: #101342;
-    padding: 20px;
+    padding: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: -3px 0px 5px #818181;
@@ -8,4 +8,47 @@
     align-items: flex-start;
     justify-content: center;
     color: white;
+    align-items: stretch;
+}
+.MainInfo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: center;
+}
+.MainInfo2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.MainInfo3 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.RightPart p {
+    margin: 0;
+}
+.date {
+    font-size: 18px;
+    color: rgb(156, 154, 154);
+    font-weight: 500;
+}
+.ico {
+    width: 70px;
+    margin-top: 0px;
+    position: relative;
+    top: 15px;
+    margin: 15px;
+}
+.deg {
+    font-size: 6em;
+}
+.degC {
+    font-size: 2em;
+    color: rgb(156, 154, 154);
+    padding-top: 20px;
 }

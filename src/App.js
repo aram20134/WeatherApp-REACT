@@ -4,12 +4,13 @@ import AllParts from './components/allParts/AllParts';
 import { Weather, WeatherInfo } from './context/index';
 import { useState } from 'react';
 import getWeather from './components/API/ForecastGET';
+import { cities } from './other/cities';
 
 export default function App() {
 
   const [weather, setWeather] = useState([{}])
   const [weatherLoaded, setWeatherLoaded] = useState(false)
-  const [city, setCity] = useState([{city: 'Краснодар', eng: 'Krasnodar'}])
+  const [city, setCity] = useState([cities[0]])
 
   useEffect(() => {
     if (weatherLoaded == false) {
