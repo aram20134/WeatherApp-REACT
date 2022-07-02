@@ -1,4 +1,5 @@
 .AllParts {
     display: flex;
     flex-direction: row;
+    transform: scale(1.2);
 }

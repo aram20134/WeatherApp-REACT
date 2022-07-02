@@ -35,10 +35,13 @@
 }
 .pillar {
     width: 8px;
-    background-color: #302E63;
+    background-color: #3e3b7c;
     border-radius: 15px;
     position: relative;
+    transition: all 0.5s ease;
+    height: 0;
     z-index: 100;
+    opacity: 1;
 }
 .pillarDate {
     position: absolute;
@@ -50,9 +53,21 @@
     position: absolute;
 	bottom: 0;
     margin-bottom: 2px;
-    left: 40%;
+    left: 3px;
     border:none;
-    border-left: 2px dashed rgb(132, 132, 132);
+    border-left: 2px dashed rgb(58 58 58);
     height: 95px;
     width: 0px;
+}
+.pillarAll {
+    opacity: 0;
+}
+.pillarAllEnter {
+    opacity: 0;
+    height: 0 !important;
+}
+.pillarAllEnterActive {
+    opacity: 1;
+    height: 100%;
+    transition: all 0.5s ease;
 }
