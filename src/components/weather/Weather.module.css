@@ -1,0 +1,7 @@
+.weatherBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-end;
+    height: 100%;
+}

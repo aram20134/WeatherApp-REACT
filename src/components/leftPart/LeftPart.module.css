@@ -3,6 +3,8 @@
     padding: 25px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .leftPart i {
     font-weight: 400;

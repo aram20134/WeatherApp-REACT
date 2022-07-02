@@ -24,7 +24,6 @@ export default function LeftPart({city, setCity, weatherLoaded, setWeatherLoaded
         <i>Прогноз</i> погоды
       </h1>
       <CurrentCity city={city} />
-      <h3>Неделя</h3>
       {/* {<Weather city={city} weatherLoaded={weatherLoaded}  />} */}
       {isWeatherError(weatherLoaded, city)}
     </div>

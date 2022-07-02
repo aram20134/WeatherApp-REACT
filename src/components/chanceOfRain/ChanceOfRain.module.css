@@ -1,0 +1,58 @@
+.ChanceOfRain {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.lineCH {
+    width: 50px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: red;
+}
+.block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+.column1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: rgb(156, 154, 154);
+    font-size: 16px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.column2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+}
+.pillar {
+    width: 8px;
+    background-color: #302E63;
+    border-radius: 15px;
+    position: relative;
+    z-index: 100;
+}
+.pillarDate {
+    position: absolute;
+    bottom: -25px;
+    left: -3px;
+    font-size: 14px;
+}
+.tracePillar {
+    position: absolute;
+	bottom: 0;
+    margin-bottom: 2px;
+    left: 40%;
+    border:none;
+    border-left: 2px dashed rgb(132, 132, 132);
+    height: 95px;
+    width: 0px;
+}

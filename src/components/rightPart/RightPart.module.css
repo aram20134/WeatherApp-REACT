@@ -1,6 +1,5 @@
 .RightPart {
     background-color: #101342;
-    padding: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: -3px 0px 5px #818181;
@@ -9,6 +8,8 @@
     justify-content: center;
     color: white;
     align-items: stretch;
+    flex-direction: column;
+    min-width: 450px;
 }
 .MainInfo {
     display: flex;
