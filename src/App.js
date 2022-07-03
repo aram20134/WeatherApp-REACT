@@ -10,19 +10,19 @@ export default function App() {
 
   const [weather, setWeather] = useState([{}])
   const [weatherLoaded, setWeatherLoaded] = useState(false)
-  const [city, setCity] = useState([cities[0]])
+  const [city, setCity] = useState(localStorage.getItem('city') == null ? [cities[1]] : cities.filter((city) => city.city.includes(JSON.parse(localStorage.getItem('city')).city)))
+
+  console.log()
 
   useEffect(() => {
     if (weatherLoaded == false) {
       async function fetch (city) {
         await getWeather(city)
-        // setWeather(await getWeather(city))
-        // setWeatherLoaded(true)
         .then(resp => resp != 'error' ? (setWeather(resp),setWeatherLoaded(true)) : setWeatherLoaded(null))
       }
       fetch(city)
     }
-    // console.log(weatherLoaded)
+    // console.log(JSON.parse(localStorage.getItem('city')).city)
   }, [city])
   
 
