@@ -22,6 +22,12 @@ export default async function getWeather (city, weather, setWeather) {
           rawPOP.push(Math.round(list.pop * 100))
           dt_txt.push(list.dt_txt)
         } else {
+          if (iter == 0) {
+            temp = list.main.temp
+            humidity += list.main.humidity
+            rawPOP.push(Math.round(list.pop * 100))
+            dt_txt.push(list.dt_txt)
+          }
           description = list.weather[0].description
           ex.push(([{
             day: day,

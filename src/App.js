@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './styles/app.css';
 import AllParts from './components/allParts/AllParts';
-import { Weather, WeatherInfo } from './context/index';
+import { WeatherInfo } from './context/index';
 import { useState } from 'react';
 import getWeather from './components/API/ForecastGET';
 import { cities } from './other/cities';
@@ -10,9 +10,7 @@ export default function App() {
 
   const [weather, setWeather] = useState([{}])
   const [weatherLoaded, setWeatherLoaded] = useState(false)
-  const [city, setCity] = useState(localStorage.getItem('city') == null ? [cities[1]] : cities.filter((city) => city.city.includes(JSON.parse(localStorage.getItem('city')).city)))
-
-  console.log()
+  const [city, setCity] = useState(localStorage.getItem('city') == null ? [cities[0]] : cities.filter((city) => city.city.includes(JSON.parse(localStorage.getItem('city')).city)))
 
   useEffect(() => {
     if (weatherLoaded == false) {
