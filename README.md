@@ -1,5 +1,1 @@
-https://bestmemes.ru
-
-React native
-
-axios
+Simple weatherAPP with REACT native using API
